@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notebook</title>
+
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to a nice font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Magic Notebook</h1>
+        <p>Your text is saved automatically. Access it from any device.</p>
+
+        <textarea id="note-textarea" placeholder="Paste or type your text here..."></textarea>
+
+        <div class="button-group">
+            <button id="save-button">Save</button>
+            <button id="copy-button">Copy</button>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- The SDK for Cloud Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Link to our JavaScript file for interactivity -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
