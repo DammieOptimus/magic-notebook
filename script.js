@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const noteTextarea = document.getElementById('note-textarea');
     const saveButton = document.getElementById('save-button');
     const copyButton = document.getElementById('copy-button');
+    const yearSpan = document.getElementById('current-year');
 
+    // This sets the current year in the footer automatically.
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 
     // --- LOAD DATA LOGIC ---
     // This function runs once when the page loads to get the initial note.
